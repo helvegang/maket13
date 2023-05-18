@@ -1,0 +1,306 @@
+@font-face {
+	font-family: 'ttlakes';
+	font-display: swap;
+	src: url("./fonts/TTLakes-Regular.eot");
+	src: local("O"), url("./fonts/TTLakes-Regular.woff") format("woff"), 
+			url("./fonts/TTLakes-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ttlakesextrabold';
+	font-display: swap;
+	src: url("./fonts/TTLakes-ExtraBold.eot");
+	src: local("O"), url("./fonts/TTLakes-ExtraBold.woff") format("woff"), 
+			url("./fonts/TTLakes-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'ttlakesbold';
+	font-display: swap;
+	src: url("./fonts/TTLakes-Regular.eot");
+	src: local("O"), url("./fonts/TTLakes-Bold.woff") format("woff"), 
+			url("./fonts/TTLakes-Bold.ttf") format("truetype");
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    min-width: 320px;
+    background-color: #F8F8F8;
+    font-family: 'ttlakes';
+}
+.header {
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__logo {
+height: 51px;
+width: 97px;
+margin-right: auto;
+}
+.header__logo::after {
+    content:url("images/divider.svg");
+    position: absolute;
+    top: 28px; /*Меняющееся значение для других разрешений*/
+    left: 186px;/*Меняющееся значение для других разрешений*/
+    width: 2px; 
+    height: 32px;
+}
+.button {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+}
+.header__button {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+
+}
+.header__button:first-child {
+    margin-left: 16px; /*Меняющееся значение для других разрешений*/
+}
+.button--display--none {
+    display: none;
+}
+
+.button__img {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+ }
+.middle__title {
+    padding: 24px 16px; /*Меняющееся значение для других разрешений*/
+}
+.middle__h1 {
+    font-size: 28px;
+    font-family: 'ttlakesbold';
+    margin: 0px;
+    margin-right: auto;
+}
+.middle__h1::after {
+    content: url(images/highlight.svg);
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    left: 0px;
+    top: 112px; /*Меняющееся значение для разрешения 1120*/
+}
+.button--with-text {
+    font-size: 16px;
+    font-family: 'ttlakes';
+    font-weight: 600;
+    background-color: #F8F8F8;
+    border: 0px;
+    padding: 0px;
+}
+.button--with-text--display--none {
+    display: none; /*Изменяемое значение для других разрешений*/
+}
+.middle__img {
+    margin-left: 9px;
+}
+.nav {
+    display: flex;
+    overflow: scroll;/*Изменяемое значение для других разрешений*/
+    align-items: center;
+    padding-left: 16px; /*Изменяемое значение для других разрешений*/
+    padding-right: 9px; /*Изменяемое значение для других разрешений*/
+    padding-bottom: 24px; /*Изменяемое значение для других разрешений*/
+    
+}
+.item {
+    color: #7E7E82;
+    background-color: #F8F8F8;
+    border: 0px;
+    font-family: 'ttlakes';
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 9px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.item:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 6px;
+    padding-left: 14px;
+    padding-right: 7px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main__article {
+    margin-left: 16px; /*Меняющееся значение для других разрешений*/
+    margin-right: 16px; /*Меняющееся значение для других разрешений*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+}
+.main__text {
+    white-space: pre-wrap;
+    margin: 0px;
+    font-size: 14px;
+}
+.main__button {
+    display: flex;
+    font-size: 16px;
+    font-family: 'ttlakes';
+    font-weight: 600;
+    margin-bottom: 16px;
+    background-color: #F8F8F8;
+    border: 0px;
+    padding: 0px;
+    line-height: 24px;
+    
+}
+.main__button::before {
+    content: url(images/expand.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+
+}
+
+.main__img-photo {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .header__button:first-child {
+        margin-left: 24px; /*Меняющееся значение для других разрешений*/
+        margin-right: 43px;
+    }
+    .header__button:last-child {
+        margin-right: 24px; /*Меняющееся значение для других разрешений*/
+    }
+ 
+    .header__logo::after {
+        top: 28px; /*Меняющееся значение для других разрешений*/
+        left: 84px;/*Меняющееся значение для других разрешений*/
+    }
+    .header__logo::before { /* Класс появляющийся только для этого разрешения */
+        content:url("images/divider.svg");
+        position: absolute;
+        width: 2px; 
+        height: 32px;
+        top: 28px; 
+        right: 140px;
+    }
+    .button--display--none {
+        display: block;
+    }
+    .button--display--none:nth-child(5) {
+        margin-right: 42px;
+    }
+
+    .middle__title {
+        padding: 24px 24px; /*Меняющееся значение для других разрешений*/
+    }
+    .nav {
+        padding-left: 24px; /*Изменяемое значение для других разрешений*/
+        padding-right: 24px; /*Изменяемое значение для других разрешений*/
+        padding-bottom: 32px; /*Изменяемое значение для других разрешений*/
+    }
+    .main__article {
+        margin-left: 24px; /*Меняющееся значение для других разрешений*/
+        margin-right: 48px;
+        width: 41%;
+    }
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+            }
+            .main__img-photo {
+                width: 47%;
+                margin-right: 25px;
+            }
+}   
+    
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    .middle__title {
+        padding: 42px 32px; /*Меняющееся значение для других разрешений*/
+        padding-bottom: 9px;
+        display: flex;
+    }
+    .middle__h1::after {
+        content: url(images/highlight.svg);
+        position: absolute;
+        width: 4px;
+        height: 40px;
+        left: 0px;
+        top: 42px; /*Меняющееся значение для разрешения 1120*/
+    }
+
+    .nav {
+        
+        overflow: visible;/*Изменяемое значение для других разрешений*/
+        flex-wrap: wrap;/*Изменяемое значение для других разрешений*/
+        align-items: center;
+        padding-left: 24px; /*Изменяемое значение для других разрешений*/
+        padding-right: 24px; /*Изменяемое значение для других разрешений*/
+        padding-bottom: 10px; /*Изменяемое значение для других разрешений*/
+           
+        
+    }
+        .button--with-text--display--none {
+            display: flex; /*Изменяемое значение для других разрешений*/
+            align-items: center;
+            margin-left: 32px;
+            
+        }
+    .main__article {
+        margin-left: 32px; /*Меняющееся значение для других разрешений*/
+        margin-right: 36px;
+        width: 44%;
+    }
+    
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+            }
+            .main__button {
+                margin-left: 6px;/*Меняющееся значение для других разрешений*/
+           } 
+    .main__img-photo {
+        
+        width: 47%;
+        margin-right: 29px;
+    }
+    .item {
+        padding-left: 20px;
+        padding-right: 16px;
+    }
+    .item:hover {
+        background-color: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        padding-left: 18px;
+        padding-right: 14px;
+    }
+}
